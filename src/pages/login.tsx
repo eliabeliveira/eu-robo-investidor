@@ -38,10 +38,9 @@ export default function SignIn() {
         > 
           <VStack spacing="4">
             <InputGroup>
-              <InputLeftElement 
-                pointerEvents="none"
-                children={<EmailIcon color="gray.600" />}
-              />
+              <InputLeftElement pointerEvents="none">
+                <EmailIcon color="gray.600" />
+              </InputLeftElement>
               <Input 
                 name="email" 
                 type="email" 
@@ -56,10 +55,9 @@ export default function SignIn() {
             </InputGroup>
 
             <InputGroup>
-              <InputLeftElement 
-                pointerEvents="none"
-                children={<UnlockIcon color="gray.600" />}
-              />
+              <InputLeftElement pointerEvents="none">
+                <UnlockIcon color="gray.600" />
+              </InputLeftElement>
               <Input 
                 name="password" 
                 type={showPassword ? 'text' : 'password'}
